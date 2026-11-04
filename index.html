@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="text-scale" content="scale">
+  <meta name="color-scheme" content="light dark">
+  <title>로또 번호 분석</title>
+  <meta name="description" content="로또 6/45 전 회차를 통계로 분석하고, 어떤 공식으로 번호를 골랐는지 공개하는 사이트입니다.">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>로또 번호 분석</h1>
+      <p id="round-label" class="lead">불러오는 중입니다.</p>
+    </header>
+
+    <section id="countdown" class="card" aria-live="off"></section>
+
+    <section>
+      <button id="draw" class="primary" type="button" disabled>번호 뽑기</button>
+      <p class="hint">이번 회차에는 몇 번을 눌러도 같은 번호가 나옵니다.</p>
+      <div id="result" tabindex="-1"></div>
+    </section>
+
+    <details id="analysis-box" class="analysis">
+      <summary>분석 결과 보기</summary>
+      <div id="analysis"></div>
+    </details>
+
+    <footer>
+      <p>로또는 만 19세 이상만 구매할 수 있습니다. 잃어도 괜찮은 금액 안에서만 구매하세요.</p>
+      <p>구매를 멈추기 어렵다면 한국도박문제예방치유원 <a href="tel:1336">1336</a>에서 상담받을 수 있습니다.</p>
+      <p>이 사이트는 포트폴리오용 개인 프로젝트이며, 동행복권과 관련이 없습니다.</p>
+      <p id="data-note"></p>
+    </footer>
+  </main>
+</body>
+</html>
